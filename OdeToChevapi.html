@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdeToChevapi</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, rgb(245, 215, 158) 60%, rgb(194, 80, 41));
+        }
+        h1 {
+            color: #5D282A;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+        }
+        h2 {
+            border: 1px solid #C25029;
+            border-radius: 5px;
+            color: #C25029;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: 100;
+            text-align: center;
+            padding: 15px;
+        }
+        img {
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+        }
+        p {
+            color: #5D282A;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 20px 0 10px;
+            text-align: left;
+        }
+        p span {
+            background: #F7CB0E;
+            border-radius: 4px;
+        }
+        button {
+            background: #F4FCFD;
+            border: 1px solid #5D282A;
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px #EFDFC2;
+            color: #5D282A;
+            display: block;
+            font-size: 20px;
+            margin: 30px auto; 
+            padding: 15px 20px;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover {
+            background: #5D282A;
+            color: #C6C3CD;
+            cursor: pointer;
+        }
+        hr {
+            border: 1px solid #5D282A;
+        }
+        .blogPost {
+            font-style: italic;
+            text-decoration: none;
+        }
+        .blogPost:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+        .readMore {
+            color: #5D282A;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            margin: 20px 0 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>
+        Ode to Ćevapi
+    </h1>
+    <h2>
+        <strong>
+        The best food of the Balkans
+        </strong>
+    </h2>
+    <img src="https://crnopile.com/wp-content/uploads/2020/07/cevapi1.jpg" alt="Chevapi">
+    <p>
+        <em> Ćevapi </em> (articulated tche-vaapi) are the best food ever, it’s a must-try food in Bosnia, but in other Balkans countries as well, and it’s very
+        popular all around Europe. It’s kind of a small grill minced meat sausages, served with a flatbread called lepinja,
+        onion, and often kajmak (dairy, cheese-like product, delicious). 
+        <br>
+        Ćevapi can be made from beef, veal, pork, sheep, or
+        lamb meat, it mostly depends on the region where they are being made.
+        <hr>
+        <p>
+            Read more about ćevapi in this amazing blog post by 
+        <a href="https://www.culturalplaces.com/blog/balkans-street-food/" 
+        target="blank"
+        class="blogPost">
+        culturalplaces.
+    </a> 
+    </p>
+    <p>
+        <span>
+        Want to know which drink goes best with ćevapi?
+        </span>
+    </p>
+    </p>
+    
+    <button>
+        Find out!
+    </button>
+    <script>
+
+         function bestDrink() {
+                let name = prompt("What is your name?")
+                let drink = prompt("What drink do you prefer?");
+                drink = drink.toLowerCase();
+                drink = drink.trim();
+
+                if (drink === "beer") {
+                    alert ("Correct " + name + "! Cheers! 🍻😎");
+                } else {
+                    alert ("Wrong " + name + "! It's nice and cold lager beer 🍻😎");
+                }
+
+            }
+
+            let drinkButton = document.querySelector("button");
+            drinkButton.addEventListener("click", bestDrink);
+
+    </script>
+</div>
+</body>
+</html>
